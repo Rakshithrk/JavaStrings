@@ -1,0 +1,30 @@
+package string;
+
+public class rev {
+
+	public void revc(String s) {
+		
+		String s1=""; 
+		String a="";
+		String s2[]=s.split(" ");
+		for(int i=0;i<s2.length;i++) { 
+			     s1=s2[i]+" "+s1;
+		} 
+		for(int i=0;i<s1.length();i++) {
+			a=s1.charAt(i)+a;
+		}
+		System.out.println(a);
+	}
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     //   StringBuffer sb=new StringBuffer("iNeuron Java");
+      //  System.out.println(sb);
+        String str="JAVA iNeuron";
+        rev  r=new rev();
+        r.revc(str);
+	}
+
+}
