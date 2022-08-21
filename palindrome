@@ -1,0 +1,31 @@
+package string;
+
+public class palindrome {
+
+	public void palin(String s) {
+			int n=s.length();
+			String s1="";
+			for(int i=0;i<n;i++) {
+				if(true) {
+				s1=s.charAt(i)+s1;
+				}
+			}
+		
+		if(s.equalsIgnoreCase(s1)) {
+			
+			System.out.println("Palindrome");
+		}
+		else {
+			System.out.println("Not-Palindrome");
+		}
+		//System.out.println(s1);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+        String str="inmni";
+        palindrome  r=new palindrome();
+        r.palin(str);
+	}
+}
