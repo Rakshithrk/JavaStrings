@@ -1,0 +1,28 @@
+package string;
+class pang{ 
+	public static void  pangram(String s) { 
+		char []L= {'a','b','c','d','e','f','g','h','i','j','k','l',
+				'm','n','o','p','q','r','s','t','u','v','w','x','y','z'};	
+		int n=L.length;
+		s=s.toLowerCase();
+		char []a=s.toCharArray();
+		int	 c=0;
+		for(int i=0;i<L.length;i++) {
+		    for(int j=0;j<a.length;j++) {
+		    	if(L[i]==a[j]){ 
+		    	   c=c+1; 
+		    	   break;
+		    	} 
+		    }
+		}
+		System.out.println(c);
+		if(c==n)
+			System.out.println("Pangram");
+		else
+			System.out.println("Not pangram");
+	}
+	public static void main(String[] args) { 
+		String s="abcdefghijkl abcdefghijkl Welcome to java iNeuron mnopqrstuvwxyz";
+		pangram(s);
+	}
+}
